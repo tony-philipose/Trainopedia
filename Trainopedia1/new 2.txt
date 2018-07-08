@@ -1,0 +1,3 @@
+$query="select `pack_name`.`p_name`,`register`.`fname` FROM `pack_name`,`subcripition`,`register` WHERE 
+`pack_name`.`p_name_id`=`subcripition`.`p_name_id` and `subcripition`.`reg_id`=`register`.`reg_id`";
+$result = mysql_query($sql) or die('Query failed: ' . mysql_error());
